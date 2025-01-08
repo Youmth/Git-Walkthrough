@@ -1,0 +1,36 @@
+/*
+This file contains the steps to initialize a folder as a Git repository, add files, commit them, and push to a remote repository.
+
+Steps:
+1. Open a terminal and navigate to the folder:
+    ```
+    cd /c:/Users/dacv0/Documents/Codigo/Python/Git\ walkthrough/
+    ```
+
+2. Initialize the folder as a Git repository:
+    ```
+    git init
+    ```
+
+3. Add the files to the staging area:
+    ```
+    git add .
+    ```
+
+4. Commit the files with a message:
+    ```
+    git commit -m "🔥 Initial commit"
+    ```
+
+5. Add the remote repository:
+    ```
+    git remote add origin https://github.com/Youmth/Git-Walkthrough.git
+    ```
+
+6. Push the changes to the remote repository:
+    ```
+    git push -u origin master
+    ```
+
+Note: The `-u` flag in the `git push` command sets the upstream (tracking) reference for the current branch, so that future `git push` commands can be run without specifying the remote and branch name.
+*/
