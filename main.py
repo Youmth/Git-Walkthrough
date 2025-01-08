@@ -44,6 +44,9 @@ class Particles:
 
     # Method to update all particles
     def update(self):
+        if len(self.particles) > 100:  # Limit the number of particles to 1000
+            self.particles.pop(0)  # Remove the oldest particle if there are more than 1000
+
         gravity = [0, 1]  # Gravity force
         for particle in self.particles:
             particle.applyforce(0.1, gravity)  # Apply gravity to each particle
