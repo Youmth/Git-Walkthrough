@@ -17,6 +17,9 @@ class Particle:
 
     # Method to move the particle based on its speed
     def move(self):
+        if self.y > 600:
+            return # Remove the particle if it moves beyond the bottom of the screen
+        
         self.x += self.speed[0]
         self.y += self.speed[1]
 
