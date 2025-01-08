@@ -8,7 +8,7 @@ class Particle:
         self.x = x
         self.y = y
         self.size = random.randint(4, 6)  # Random size between 4 and 6
-        self.color = (255, 255, 255)  # White color
+        self.color = (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))  # White color
 
         # Random speed in both x and y directions
         angle = random.uniform(-0.25, 0.25) * 3.14  # Random angle between -45 and 45 degrees in radians
